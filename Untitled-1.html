@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahibinden.com</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #fbff00;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Filtreleme ve Sıralama */
+        .filtreleme, .siralama {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 20px;
+        }
+
+        .siralama {
+            margin-left: 20px;
+        }
+
+        /* Saat detayları stil */
+        .saat-detay {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .saat-detay img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .saat-baslik {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .saat-detay p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .saat-detay ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .saat-detay ul li {
+            margin-bottom: 5px;
+        }
+
+        .saat-detay button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .saat-detay button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SAHİBİNDEN.COM</h1>
+    </header>
+    <main>
+        <div class="filtreleme">
+            <label for="filtre">Filtrele:</label>
+            <select id="filtre">
+                <option value="tum">Tüm Saatler</option>
+                <option value="casio">CASIO Saatleri</option>
+                <option value="swatch">SWATCH Saatleri</option>
+                <option value="rolex">ROLEX Saatleri</option>
+                <option value="tissot">TİSSOT Saatleri</option>
+                <option value="citizen">CITIZEN Saatleri</option>
+            </select>
+        </div>
+        <div class="siralama">
+            <label for="siralama">Sırala:</label>
+            <select id="siralama">
+                <option value="fiyat-artan">Fiyata Göre Artan</option>
+                <option value="fiyat-azalan">Fiyata Göre Azalan</option>
+                <option value="yeni-eski">Yeniden Eskiye</option>
+                <option value="eski-yeni">Eskiden Yeniye</option>
+            </select>
+        </div>
+        
+        <section class="saat-detay">
+            <h2 class="saat-baslik">CASIO SAATLER</h2>
+            <img src="casss.jpeg" alt="Casio Saat Resmi">
+            <p>Saat Açıklaması: Yüksek kaliteli malzemelerden üretilmiş, su geçirmez CASIO RG-1234 modeli.</p>
+            <ul>
+                <li><strong>Fiyat:</strong> 5.000 TL</li>
+                <li><strong>Marka:</strong> CASIO</li>
+                <li><strong>Model:</strong> RG-1234</li>
+                <li><strong>Materyal:</strong> Çelik</li>
+                <li><strong>Konum:</strong> Balıkesir</li>
+            </ul>
+            <button>Sepete Ekle</button>
+        </section>
+
+        <section class="saat-detay">
+            <h2 class="saat-baslik">SWATCH SAATLER</h2>
+            <img src="AKILLI SAAT.jpg" alt="Swatch Saat Resmi">
+            <p>Saat Açıklaması: Şık ve renkli tasarımıyla dikkat çeken Swatch modeli, her yaşa uygun bir seçenek.</p>
+            <ul>
+                <li><strong>Fiyat:</strong> 3.500 TL</li>
+                <li><strong>Marka:</strong> Swatch</li>
+                <li><strong>Model:</strong> Color Burst</li>
+                <li><strong>Materyal:</strong> Plastik</li>
+                <li><strong>Konum:</strong> Balıkesir</li>
+            </ul>
+            <button>Sepete Ekle</button>
+        </section>
+
+        <section class="saat-detay">
+            <h2 class="saat-baslik">ROLEX SAATLER</h2>
+            <img src="ROLEX.jpg" alt="Rolex Saat Resmi">
+            <p>Saat Açıklaması: Lüks ve prestijli Rolex modeli, şıklığı ve dayanıklılığıyla bilinir.</p>
+            <ul>
+                <li><strong>Fiyat:</strong> 25.000 TL</li>
+                <li><strong>Marka:</strong> Rolex</li>
+                <li><strong>Model:</strong> Submariner</li>
+                <li><strong>Materyal:</strong> Çelik</li>
+                <li><strong>Konum:</strong> Balıkesir</li>
+            </ul>
+            <button>Sepete Ekle</button>
+        </section>
+
+        <section class="saat-detay">
+            <h2 class="saat-baslik">TİSSOT SAATLER</h2>
+            <img src="TİSSOT.jpg" alt="Tissot Saat Resmi">
+            <p>Saat Açıklaması: Tissot'un zarif ve şık tasarımı, kalitesiyle bilinen bir model.</p>
+            <ul>
+                <li><strong>Fiyat:</strong> 7.500 TL</li>
+                <li><strong>Marka:</strong> Tissot</li>
+                <li><strong>Model:</strong> T-Classic</li
+                <li><strong>Metaryel:</strong> Çelik</li>
+                <li><strong>Konum:</strong> Balıkesir</li
+            </ul>
+            <button>sepete Ekle</button>
